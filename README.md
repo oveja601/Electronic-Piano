@@ -12,43 +12,49 @@ The piano consists of seven input keys corresponding to musical notes (C, D, E, 
 Click the image above to watch the demo video!
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/11LNg1B_T8BMvo-FhyoWwXaVYVA8_kbn9/view?usp=sharing">
-    <img src="images/demo2.png" width="700">
+  <a href="https://drive.google.com/file/d/1dEsFdvUNxq7czSPp4Ksm2Lqd608b1Mo4/view?usp=drive_link">
+    <img src="images/demo.png" width="700">
   </a>
 </p>
 
 ## Key Features
-- DC motor control
-- Differential-drive robot design
-- Forward / left / right motion control
-- Basic navigation logic
-- Embedded system integration
+-digital input handling
+-frequency generation
+-buzzer control
+-waveform timing
+-embedded programming
+-simple circuit interfacing
 ## Hardware Used
-- AVR ATmega328P Microcontroller
-- H-Bridge Motor Driver Board
-- Two-Wheel Robot Chassis
-- DC Motors
-- Infrared line tracking sensor
+- Arduino Uno Microcontroller
+- Breadboard Prototyping Circuit
+- Push Buttons (Piano Keys)
+- Piezo Buzzer
+- Resistors
+- Jumper Wires
 
 ## Hardware Setup
+
 <p align="center">
-<img width="486" height="728" alt="Image" src="https://github.com/user-attachments/assets/0b923282-6850-417f-b7c3-6c208d904e2f" />
+<img width="513" height="390" alt="image" src="https://github.com/user-attachments/assets/9cc97558-ebee-4b3e-a517-28861e08a55a" />
 </p>
 
 
 ## Source Code
 
-Use Timer0 and Timer2 to generate the PWM signals. Connect OC0A and OC0B (PD6 and
-PD5) to IN1 and IN2. These two output signals control a DC motor. 
-Connect OC2A and OC2B (PB3 and PD3) to IN3 and IN4.These two output signals
-control the other DC motor.
+Use pin 3 as the output to the buzzer. Connect pin 3 to a buzzer.
+Pin 2 and pins Analog0 to Analog5 are used as the inputs from the keyboard. 
+The keyboard is composed of several keys (switches). 
 <p align="center">
-<img width="562" height="240" alt="image" src="https://github.com/user-attachments/assets/77904524-ee3a-474d-bcfe-812558550793" />
+<img width="517" height="500" alt="image" src="https://github.com/user-attachments/assets/33b096f1-9f8b-457e-9f40-0b59776c5fc2" />
 </p>
 
 The complete embedded control program is available in the `src/` directory.
 
 ## Technologies Used
-- C++ / Arduino
-- Embedded Programming
-- Robot Navigation Logic
+
+- C++ / Arduino Programming
+- Embedded Systems Programming
+- Digital Input Processing
+- Frequency-Based Audio Signal Generation
+- Square-Wave Signal Generation
+- Basic Circuit Design
