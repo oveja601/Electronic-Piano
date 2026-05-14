@@ -18,12 +18,14 @@ Click the image above to watch the demo video!
 </p>
 
 ## Key Features
--digital input handling
--frequency generation
--buzzer control
--waveform timing
--embedded programming
--simple circuit interfacing
+
+- digital input handling
+- frequency generation
+- buzzer control
+- waveform timing
+- embedded programming
+- simple circuit interfacing
+
 ## Hardware Used
 - Arduino Uno Microcontroller
 - Breadboard Prototyping Circuit
